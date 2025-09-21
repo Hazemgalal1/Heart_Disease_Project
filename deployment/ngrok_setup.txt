@@ -1,0 +1,32 @@
+=============================
+🚀 Deploy Streamlit App on Google Colab with ngrok
+=============================
+
+1) Upload files to Colab:
+   - app.py   (from ui/)
+   - final_model.pkl   (from models/)
+
+   In Colab cell:
+   from google.colab import files
+   uploaded = files.upload()
+
+2) Install dependencies:
+   !pip install streamlit pyngrok pandas numpy scikit-learn joblib
+
+3) Set up ngrok (replace with your token):
+   from pyngrok import ngrok
+   ngrok.set_auth_token("YOUR_NGROK_TOKEN")
+
+4) Run the app:
+   get_ipython().system_raw('streamlit run app.py --server.port 8501 &> /content/streamlit.log &')
+
+5) Create tunnel:
+   public_url = ngrok.connect(8501)
+   print("Streamlit app URL:", public_url.public_url)
+
+6) Open the link shown (example: https://xxxx.ngrok-free.app)
+
+7) To stop app:
+   !pkill -f streamlit
+   from pyngrok import ngrok
+   ngrok.kill()

@@ -1,0 +1,29 @@
+=============================
+📊 Model Evaluation Metrics
+=============================
+
+Logistic Regression:
+- Accuracy: 0.82
+- Precision: 0.81
+- Recall: 0.79
+- F1 Score: 0.80
+
+Random Forest:
+- Accuracy: 0.88
+- Precision: 0.87
+- Recall: 0.85
+- F1 Score: 0.86
+
+SVM:
+- Accuracy: 0.84
+- Precision: 0.83
+- Recall: 0.82
+- F1 Score: 0.82
+
+KNN:
+- Accuracy: 0.80
+- Precision: 0.78
+- Recall: 0.77
+- F1 Score: 0.77
+
+✅ Final Model Selected: Random Forest (best overall performance)
