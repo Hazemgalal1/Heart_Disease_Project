@@ -1,18 +1,27 @@
-# ❤️ Comprehensive Machine Learning Full Pipeline on Heart Disease UCI Dataset
+# Comprehensive Machine Learning Pipeline for Heart Disease Prediction
 
-## 📌 Overview
-This project applies a full machine learning pipeline on the UCI Heart Disease dataset.  
-It includes preprocessing, dimensionality reduction (PCA), feature selection, supervised & unsupervised learning, hyperparameter tuning, and a Streamlit app for deployment.
+A full end-to-end Machine Learning pipeline built on the **UCI Heart Disease dataset**, covering everything from **data preprocessing** to **deployment**.  
+This project demonstrates practical ML techniques including dimensionality reduction, feature selection, model training, hyperparameter tuning, and deployment with **Streamlit**.
 
 ---
 
-## 🌍 Live Demo
-You can try the Streamlit app here:  
+## Features
+- Complete ML pipeline on real-world medical data.
+- Preprocessing & feature engineering.
+- Supervised & unsupervised learning experiments.
+- Multiple model training and evaluation.
+- Final model deployment with an interactive Streamlit app.
+- Ready-to-use project structure for reproducibility.
+
+---
+
+## Live Demo
+Try the deployed app here:  
 👉 [Heart Disease Prediction App](https://e318baa2d519.ngrok-free.app/)
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 ```
 Heart_Disease_Project/
 │── data/                       # Raw & processed datasets
@@ -42,34 +51,35 @@ Heart_Disease_Project/
 
 ---
 
-## 🚀 How to Run the Streamlit App
+## Getting Started
 
-### 🔹 Local (VS Code / Terminal)
+### 1. Clone the Repository
+```bash
+git clone https://github.com/yourusername/heart-disease-ml-pipeline.git
+cd heart-disease-ml-pipeline
+```
+
+### 2. Install Dependencies
 ```bash
 pip install -r requirements.txt
+```
+
+### 3. Run Locally
+```bash
 streamlit run ui/app.py
 ```
-Open `http://localhost:8501` in your browser.
+App will be available at: `http://localhost:8501`
 
----
-
-### 🔹 Google Colab (with ngrok)
-1. Upload `ui/app.py` and `models/final_model.pkl` to Colab:
-   ```python
-   from google.colab import files
-   uploaded = files.upload()
-   ```
+### 4. Run on Google Colab (with ngrok)
+1. Upload `ui/app.py` and `models/final_model.pkl`
 2. Install dependencies:
    ```bash
    !pip install streamlit pyngrok pandas numpy scikit-learn joblib
    ```
-3. Set up ngrok:
+3. Start app with ngrok tunnel:
    ```python
    from pyngrok import ngrok
    ngrok.set_auth_token("YOUR_NGROK_TOKEN")
-   ```
-4. Run:
-   ```python
    get_ipython().system_raw('streamlit run app.py --server.port 8501 &')
    public_url = ngrok.connect(8501)
    print(public_url.public_url)
@@ -77,23 +87,50 @@ Open `http://localhost:8501` in your browser.
 
 ---
 
-## 📊 Models Trained
-- Logistic Regression
-- Random Forest
-- Support Vector Machine (SVM)
-- K-Nearest Neighbors (KNN)
+## Models Trained
+- Logistic Regression  
+- Random Forest  
+- Support Vector Machine (SVM)  
+- K-Nearest Neighbors (KNN)  
 
-✅ **Final Selected Model**: Random Forest (best performance)
-
----
-
-## 📈 Results
-See [results/evaluation_metrics.txt](results/evaluation_metrics.txt) for model evaluation metrics.  
-See [reports/Final_Report.pdf](reports/Final_Report.pdf) for the full documentation.
+**Final Model**: Random Forest (best performance overall)
 
 ---
 
-## 🛠 Requirements
-See [requirements.txt](requirements.txt) for the full list of dependencies.
+## Results
+- Detailed evaluation metrics: [results/evaluation_metrics.txt](results/evaluation_metrics.txt)  
+- Full report: [reports/Final_Report.pdf](reports/Final_Report.pdf)
 
 ---
+
+## Requirements
+See [requirements.txt](requirements.txt) for the full list of dependencies.  
+
+Main libraries:
+- Python 3.8+
+- NumPy
+- Pandas
+- Scikit-learn
+- Streamlit
+- Joblib
+- Pyngrok (for Colab deployment)
+
+---
+
+## Future Improvements
+- Add deep learning experiments (TensorFlow / PyTorch).
+- Explore model interpretability with SHAP/LIme.
+- Improve UI design with advanced Streamlit components.
+- Deploy to a cloud platform (AWS/GCP/Heroku).
+
+---
+
+## Author
+**Your Name**  
+- GitHub: [@yourusername](https://github.com/yourusername)  
+- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)  
+
+---
+
+## License
+This project is licensed under the MIT License.
