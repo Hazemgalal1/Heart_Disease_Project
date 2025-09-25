@@ -55,7 +55,7 @@ Heart_Disease_Project/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/heart-disease-ml-pipeline.git
+git clone https://github.com/Hazemgalal1/heart-disease-ml-pipeline.git
 cd heart-disease-ml-pipeline
 ```
 
@@ -126,9 +126,9 @@ Main libraries:
 ---
 
 ## Author
-**Your Name**  
-- GitHub: [@yourusername](https://github.com/yourusername)  
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)  
+**Hazem Galal Abd Elsatar**  
+- GitHub: [@Hazemgalal1](https://github.com/Hazemgalal1)  
+- LinkedIn: [Hazem Galal](https://www.linkedin.com/in/hazem-galal-439356226)  
 
 ---
 
